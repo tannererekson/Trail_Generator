@@ -1,0 +1,152 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('IMG_2288.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  }
+  
+  h1 {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 36px;
+    color: #fff;
+  }
+  
+  /* Button styles */
+  button {
+    display: inline-block;
+    margin: 20px 10px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #5cb85c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #4cae4c;
+  }
+  
+  /* Trail details container */
+  #trailDetails {
+    max-height: 400px;
+    overflow-y: auto;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    width: 80%;
+  }
+  
+  .trail {
+    margin-bottom: 20px; /* Adjust as needed for the space between trails */
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    color: #333;
+  }
+  
+  
+  .trail h2 {
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .trail p {
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  /* Define grid layout */
+.trail-details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust width as needed */
+  grid-gap: 20px; /* Adjust gap between grid items */
+}
+
+/* Style each trail info box */
+.trail-info {
+  border: 1px solid #ccc; /* Border style */
+  padding: 15px; /* Padding for content */
+}
+
+/* Additional styling for titles, descriptions, etc. */
+.trail-info h2 {
+  font-size: 1.2em;
+  margin-bottom: 8px;
+}
+
+.trail-info p {
+  font-size: 1em;
+  color: #555;
+}
+
+/* Define grid layout */
+.trail-details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust width as needed */
+  grid-gap: 20px; /* Adjust gap between grid items */
+}
+
+/* Style each trail info table */
+.trail-table {
+  border-collapse: collapse; /* Collapse table borders */
+  width: 100%; /* Fill container width */
+}
+
+/* Style table rows */
+.trail-table tr {
+  border-bottom: 1px solid #ccc; /* Add bottom border between rows */
+}
+
+/* Style table headers (titles) */
+.trail-table th {
+  font-weight: bold; /* Make titles bold */
+  padding: 8px; /* Add padding */
+  text-align: left; /* Align text to the left */
+}
+
+/* Style table cells */
+.trail-table td {
+  padding: 8px; /* Add padding */
+}
+
+/* Style select elements */
+select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  width: 200px; /* Adjust width as needed */
+}
+
+/* Style select options */
+select option {
+  padding: 8px;
+  font-size: 14px;
+  background-color: #f7f7f7;
+  color: #333;
+}

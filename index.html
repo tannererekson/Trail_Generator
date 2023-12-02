@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random MTB Trail Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Mountain Bike Trails</h1>
+  <button onclick="getRandomTrail()">Get Random Trail</button>
+  <button onclick="getAllTrails()">Show All Trails</button>
+  <select id="type">
+    <option value="any">Any Type</option>
+    <option value="Flowy">Flowy</option>
+    <option value="Jumpy">Jumpy</option>
+    <option value="Technical">Technical</option>
+    <!-- Add other types -->
+  </select>
+  
+  <select id="difficulty">
+    <option value="any">Any Difficulty</option>
+    <option value="Green">Green</option>
+    <option value="Blue">Blue</option>
+    <option value="Black">Black</option>
+    <!-- Add other difficulties -->
+  </select>
+  <div id="trailDetails">
+    <!-- Display trail details here -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
