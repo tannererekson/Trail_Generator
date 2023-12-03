@@ -2,7 +2,7 @@ function getRandomTrail() {
     const type = document.getElementById("type").value; // Get selected trail type
     const difficulty = document.getElementById("difficulty").value; // Get selected difficulty
   
-    let url = 'http://localhost:3000/trails/random';
+    let url = '/.netlify/functions/random'; // Updated URL for the Netlify Function
   
     fetch(url)
       .then(response => {
@@ -25,7 +25,7 @@ function getRandomTrail() {
     const type = document.getElementById("type").value; // Get selected trail type
     const difficulty = document.getElementById("difficulty").value; // Get selected difficulty
   
-    let url = 'http://localhost:3000/trails';
+  let url = '/.netlify/functions/trails'; // Updated URL for the Netlify Function
   
     // Construct the URL based on selected parameters
     if (type !== 'any' && difficulty !== 'any') {
