@@ -1,25 +1,32 @@
-// functions/random.js
-
-const sqlite3 = require('sqlite3');
+const faunadb = require('faunadb');
+const q = faunadb.query;
 
 exports.handler = async (event, context) => {
-  const db = new sqlite3.Database('trails.db', (err) => {
-    if (err) {
-      console.error(err.message);
-    } else {
-      console.log('Connected to the trails database.');
-    }
-  });
-
-  return new Promise((resolve, reject) => {
-    db.get('SELECT * FROM trails ORDER BY RANDOM() LIMIT 1', (err, row) => {
-      if (err) {
-        db.close();
-        reject({ statusCode: 500, body: JSON.stringify({ error: err.message }) });
-        return;
-      }
-      db.close();
-      resolve({ statusCode: 200, body: JSON.stringify(row) });
+  try {
+    const client = new faunadb.Client({
+      secret: 'fnAFUPLoj7AARAqDJ3hdIprhWQMfUH4xHTW3SQm4'
     });
-  });
+
+    const response = await client.query(
+      q.Let(
+        {
+          documents: q.Paginate(q.Documents(q.Collection('Trails'))),
+          randomIndex: q.Floor(q.Random() * q.Count(q.Var('documents'))),
+          randomRef: q.Select(q.Var('randomIndex'), q.Var('documents')),
+          randomDoc: q.Get(q.Var('randomRef'))
+        },
+        q.Var('randomDoc')
+      )
+    );
+
+    return {
+      statusCode: 200,
+      body: JSON.stringify(response)
+    };
+  } catch (error) {
+    return {
+      statusCode: 500,
+      body: JSON.stringify({ error: 'Error fetching data' })
+    };
+  }
 };
