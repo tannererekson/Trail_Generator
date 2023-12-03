@@ -12,6 +12,7 @@ function getRandomTrail() {
         return response.json();
       })
       .then(trail => {
+        console.log(trail);
         displayTrail(trail);
       })
       .catch(error => {
@@ -94,13 +95,15 @@ function getRandomTrail() {
   function displayTrail(trail) {
     const trailDetails = document.getElementById("trailDetails");
     trailDetails.innerHTML = `
-      <h2>${trail.name}</h2>
-      <p>Parking: ${trail.parking}</p>
-      <p>Difficulty: ${trail.difficulty}</p>
-      <p>Type: ${trail.type}</p>
-      <p>Distance: ${trail.distance}</p>
+      <h2>${trail.TrailName}</h2>
+      <p>Parking: ${trail.Parking}</p>
+      <p>Difficulty: ${trail.Difficulty}</p>
+      <p>Type: ${trail.Type}</p>
+      <p>Distance: ${trail.Distance}</p>
     `;
   }
+
+
   
   // Call getRandomTrail when the page loads or when needed
   getRandomTrail();

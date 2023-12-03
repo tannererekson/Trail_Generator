@@ -1,0 +1,198 @@
+[
+    {
+        "TrailName": "Rush",
+        "Difficulty": "Black",
+        "Type": "Jumpy",
+        "Distance": 3.1,
+        "Parking": "Andy Ballard Arena 1651 E Highland Dr Draper UT"
+    },
+    {
+        "TrailName": "WOW",
+        "Difficulty": "Blue",
+        "Type": "Flowy",
+        "Distance": 8.8,
+        "Parking": "Pine Canyon Road Midway UT"
+    },
+    {
+        "TrailName": "The Crest",
+        "Difficulty": "Blue",
+        "Type": "Flowy",
+        "Distance": 26,
+        "Parking": "Bloods Lake Trail Head BCC"
+    },
+    {
+        "TrailName": "Eric’s Trail",
+        "Difficulty": "Blue",
+        "Type": "Flowy",
+        "Distance": 5.9,
+        "Parking": "5518 W Lake Ridge Cir Herriman UT"
+    },
+    {
+        "TrailName": "Hardlick",
+        "Difficulty": "Black",
+        "Type": "Technical",
+        "Distance": 4.1,
+        "Parking": "5518 W Lake Ridge Cir Herriman UT"
+    },
+    {
+        "TrailName": "Levitate",
+        "Difficulty": "Black",
+        "Type": "Jumpy",
+        "Distance": 1.2,
+        "Parking": "Brookside Dr Draper UT"
+    },
+    {
+        "TrailName": "Squaw Peak Downhill",
+        "Difficulty": "Black",
+        "Type": "Technical",
+        "Distance": 0.6,
+        "Parking": "Squaw Peak Lookout Point UT"
+    },
+    {
+        "TrailName": "Bobsled",
+        "Difficulty": "Black",
+        "Type": "Flowy",
+        "Distance": 5.1,
+        "Parking": "1401 Popperton Park Way Salt Lake City UT"
+    },
+    {
+        "TrailName": "Maple Hallow DH",
+        "Difficulty": "Black",
+        "Type": "Technical",
+        "Distance": 1.9,
+        "Parking": "Maple Hallow Trailhead Park Draper Utah"
+    },
+    {
+        "TrailName": "Jacobs Ladder",
+        "Difficulty": "Black",
+        "Type": "Technical",
+        "Distance": 2.4,
+        "Parking": "14400 S Upper Corner Canyon Road Draper UT"
+    },
+    {
+        "TrailName": "Temple Quarry",
+        "Difficulty": "Blue",
+        "Type": "Technical",
+        "Distance": 3.2,
+        "Parking": "4500-4760 E Little Cottonwood Canyon Road Sandy UT"
+    },
+    {
+        "TrailName": "The Drop Out",
+        "Difficulty": "Blue",
+        "Type": "Flowy",
+        "Distance": 2.6,
+        "Parking": "2740 Rasmussen Road Park City UT"
+    },
+    {
+        "TrailName": "Yellow Fork",
+        "Difficulty": "Blue",
+        "Type": "Flowy",
+        "Distance": 1.9,
+        "Parking": "S Rose Canyon Road Herriman UT"
+    },
+    {
+        "TrailName": "Big Thunder",
+        "Difficulty": "Black",
+        "Type": "Technical",
+        "Distance": 0.4,
+        "Parking": "E Golden Eagle Road Eagle Mountain UT"
+    },
+    {
+        "TrailName": "Britney Spears",
+        "Difficulty": "Black",
+        "Type": "Jumpy",
+        "Distance": 0.5,
+        "Parking": "E Golden Eagle Road Eagle Mountain UT"
+    },
+    {
+        "TrailName": "Ghost Falls",
+        "Difficulty": "Blue",
+        "Type": "Flowy",
+        "Distance": 0.8,
+        "Parking": "Andy Ballard Arena 1651 E Highland Dr Draper UT"
+    },
+    {
+        "TrailName": "Canyon Hallow",
+        "Difficulty": "Green",
+        "Type": "Flowy",
+        "Distance": 1.9,
+        "Parking": "Andy Ballard Arena 1651 E Highland Dr Draper UT"
+    },
+    {
+        "TrailName": "Rattlesnake Gultch",
+        "Difficulty": "Black",
+        "Type": "Technical",
+        "Distance": 0.7,
+        "Parking": "E Millcreek Canyon Road Salt Lake City UT"
+    },
+    {
+        "TrailName": "Pork U Pine",
+        "Difficulty": "Green",
+        "Type": "Flowy",
+        "Distance": 0.9,
+        "Parking": "14400 S Upper Corner Canyon Road Draper UT"
+    },
+    {
+        "TrailName": "Ann’s East",
+        "Difficulty": "Green",
+        "Type": "Flowy",
+        "Distance": 2.2,
+        "Parking": "Andy Ballard Arena 1651 E Highland Dr Draper UT"
+    },
+    {
+        "TrailName": "Woods Hallow",
+        "Difficulty": "Green",
+        "Type": "Flowy",
+        "Distance": 1.7,
+        "Parking": "Brookside Dr Draper UT"
+    },
+    {
+        "TrailName": "Rattle and Hum",
+        "Difficulty": "Green",
+        "Type": "Flowy",
+        "Distance": 1.5,
+        "Parking": "Brookside Dr Draper UT"
+    },
+    {
+        "TrailName": "Vertigo",
+        "Difficulty": "Blue",
+        "Type": "Jumpy",
+        "Distance": 1.5,
+        "Parking": "Brookside Dr Draper UT"
+    },
+    {
+        "TrailName": "Archies Loop",
+        "Difficulty": "Blue",
+        "Type": "Flowy",
+        "Distance": 1.5,
+        "Parking": "Sundance Mountain Resort"
+    },
+    {
+        "TrailName": "Tidal Wave",
+        "Difficulty": "Blue",
+        "Type": "Jumpy",
+        "Distance": 2.2,
+        "Parking": "Deer Vally Resort"
+    },
+    {
+        "TrailName": "Holy Roller",
+        "Difficulty": "Green",
+        "Type": "Flowy",
+        "Distance": 4.1,
+        "Parking": "Deer Vally Resort"
+    },
+    {
+        "TrailName": "Tsunami",
+        "Difficulty": "Black",
+        "Type": "Jumpy",
+        "Distance": 1.2,
+        "Parking": "Deer Vally Resort"
+    },
+    {
+        "TrailName": "Twist and Shout",
+        "Difficulty": "Black",
+        "Type": "Jumpy",
+        "Distance": 1,
+        "Parking": "Deer Vally Resort"
+    }
+]

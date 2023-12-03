@@ -1,60 +1,41 @@
 const express = require('express');
-const sqlite3 = require('sqlite3');
-const cors = require('cors'); // Import cors
+const cors = require('cors');
 const app = express();
 const port = 3000;
 
-// Create a new SQLite database instance
-const db = new sqlite3.Database('trails.db', (err) => {
-  if (err) {
-    console.error(err.message);
-  } else {
-    console.log('Connected to the trails database.');
-  }
-});
+// Load the trail data from the JSON file
+const trailData = require('./trailData.json');
 
 // Enable CORS for all routes
 app.use(cors());
 
-// Define your API endpoints here
+// Endpoint to get a random trail
 app.get('/trails/random', (req, res) => {
-  // Add logic here to retrieve a random trail from the database
-  db.get('SELECT * FROM trails ORDER BY RANDOM() LIMIT 1', (err, row) => {
-    if (err) {
-      res.status(500).json({ error: err.message });
-      return;
-    }
-    res.json(row);
-  });
+  // Get a random index to select a trail from the array
+  const randomIndex = Math.floor(Math.random() * trailData.length);
+  
+  // Retrieve the random trail
+  const randomTrail = trailData[randomIndex];
+  
+  res.json(randomTrail);
 });
 
 // Endpoint to get all trails
 app.get('/trails', (req, res) => {
-    const { type, difficulty } = req.query;
-  
-    let query = 'SELECT * FROM trails';
-    const params = [];
-  
-    if (type && difficulty) {
-      query += ' WHERE type = ? AND difficulty = ?';
-      params.push(type, difficulty);
-    } else if (type) {
-      query += ' WHERE type = ?';
-      params.push(type);
-    } else if (difficulty) {
-      query += ' WHERE difficulty = ?';
-      params.push(difficulty);
-    }
-  
-    db.all(query, params, (err, rows) => {
-      if (err) {
-        res.status(500).json({ error: err.message });
-        return;
-      }
-      res.json(rows);
-    });
-  });
-  
+  const { type, difficulty } = req.query;
+
+  let filteredTrails = [...trailData];
+
+  if (type) {
+    filteredTrails = filteredTrails.filter(trail => trail.Type === type);
+  }
+
+  if (difficulty) {
+    filteredTrails = filteredTrails.filter(trail => trail.Difficulty === difficulty);
+  }
+
+  res.json(filteredTrails);
+});
 
 // Start the server
 app.listen(port, () => {
