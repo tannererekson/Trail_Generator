@@ -2,7 +2,7 @@ function getRandomTrail() {
     const type = document.getElementById("type").value; // Get selected trail type
     const difficulty = document.getElementById("difficulty").value; // Get selected difficulty
   
-    let url = 'http://localhost:3000/trails/random';
+    let url = 'https://intense-waters-67548-773baf7f22f7.herokuapp.com/trails/random';
   
     fetch(url)
       .then(response => {
@@ -26,7 +26,7 @@ function getRandomTrail() {
     const type = document.getElementById("type").value; // Get selected trail type
     const difficulty = document.getElementById("difficulty").value; // Get selected difficulty
   
-    let url = 'http://localhost:3000/trails';
+    let url = 'https://intense-waters-67548-773baf7f22f7.herokuapp.com/trails';
   
     // Construct the URL based on selected parameters
     if (type !== 'any' && difficulty !== 'any') {
